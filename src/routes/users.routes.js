@@ -22,4 +22,3 @@ usersRoutes.put("/", ensureAuthenticated, usersController.update);
 usersRoutes.patch("/avatar", ensureAuthenticated, upload.single("avatar"), userAvatarController.update);
 
 module.exports = usersRoutes;
-
